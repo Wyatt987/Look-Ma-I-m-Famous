@@ -1,6 +1,6 @@
 .img {
     animation-name: translate;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: once;
     animation-direction: Left; 
     animation-fill-mode: both; 
@@ -11,7 +11,7 @@
     }
 
     to {
-        transform: translateX(130%);
+        transform: translateX(0%);
     }
 }
 #ye {
@@ -20,9 +20,8 @@
     animation-duration: 1s; 
     animation-delay: 2s; 
     animation-fill-mode: forwards;
-
 }
-@keyframes FadeIn {
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -31,5 +30,24 @@
     }
 }
 #hero {
-    background-color: #989898;
+    background-image: url(/imgs/Screenshot\ 2024-10-16\ 213136.png);
+}
+body {
+    overflow: hidden;
+}
+#-img {
+    animation-name: -translate;
+    animation-duration: 2s;
+    animation-iteration-count: once;
+    animation-direction: Left; 
+    animation-fill-mode: both; 
+}
+@keyframes -translate {
+    from {
+        transform: translateX(85%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
 }
