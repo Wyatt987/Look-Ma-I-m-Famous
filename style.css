@@ -31,6 +31,9 @@
 }
 #hero {
     background-image: url(/imgs/Screenshot\ 2024-10-16\ 213136.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
 }
 body {
     overflow-x: hidden;
