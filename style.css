@@ -35,7 +35,8 @@
     background-image: url(/imgs/Screenshot\ 2024-10-16\ 213136.png);
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 body {
     overflow-x: hidden;
@@ -58,6 +59,10 @@ body {
 }
 .bg-dark-custom {
     background-color: rgba(0, 0, 0, 0.75);
+  }
+  .bg-dark-custom-content {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 400px;
   }
   
 #Font {
@@ -149,4 +154,17 @@ body {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+}
+
+/* Details */
+.Details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.Details.show {
+  max-height: 1000px; /* Adjust to be greater than the content height */
+  opacity: 1;
 }
